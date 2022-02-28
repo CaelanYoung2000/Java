@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="form.js"></script>
+	<title>Form Validation</title>
+</head>
+
+<body>
+	<form action="approvedSubmission.html" onsubmit="return finalApproval()">
+		<table id="tableForm">
+			<tr>
+				<td>Email:</td>
+				<td>
+					<input type="text" id="email" onkeyup="approval();" />
+				</td>
+				<td>
+					<div id="errEmail"></div>
+				</td>
+			</tr>
+			<td>Password:</td>
+			<td>
+				<input type="password" id="password" onkeyup="approval();" />
+			</td>
+			<td>
+				<div id="errPassword"></div>
+			</td>
+			</tr>
+			<tr>
+				<td>Confirm Password:</td>
+				<td>
+					<input type="password" id="confirm" onkeyup="approval();" />
+				</td>
+				<td>
+					<div id="errConfirm"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>Renew membership:</td>
+				<td>
+					<input type="radio" id="Renew" value="Yes" name=Renew onclick="approval();" /> Yes</td>
+				<td>
+					<input type="radio" id="Renew" value="No" name=Renew onclick="approval();" /> No</td>
+				<td>
+					<div id="errRenew"></div>
+				</td>
+			</tr>
+			<tr>
+				<tr>
+					<td>
+						<input type="submit" id="create" value="Create" onclick="approval();finalValidate();" />
+					</td>
+					<td>
+						<div id="errFinal"></div>
+					</td>
+				</tr>
+		</table>
+	</form>
+</body>
+
+</html>

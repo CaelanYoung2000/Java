@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+  /* Body styles */
+  
+	body {
+       margin: 0;
+       padding: 0;
+	}
+	
+  /* Body styles */
+  
+  
+	.container {
+       width: 1440px;
+       margin: 50px;
+       min-height: 50px;
+       text-align: center;
+	}
+	
+	#convert, #reset {
+       margin: 5px;
+	}
+	
+	#romanInput {
+       width: 200px;
+	}
+	
+	#convert:focus {
+       border: 2px solid rgb(0, 0, 255);
+	}
+	
+	#reset:focus {
+       border: 2px solid blue;
+	}
+  
